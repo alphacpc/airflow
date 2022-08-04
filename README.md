@@ -9,8 +9,8 @@
 ![Filtres](./images/architecture.png)
 <br></br>
 <br></br>
-## **Présentation**
 
+## **Présentation**
 > - ### Airflow est une plateforme permettant (le CPC) de **créer**, de **planifier** et de **contrôler** des flux de travail,
 > - ### Initialement, c’est **Airbnb** qui a démarré ce projet en octobre 2014,
 > - ### afin de **gérer les flux de travail de plus en plus complexes** au sein de l'entreprise,
@@ -56,3 +56,23 @@
 > 2. ### Via **[Docker](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)**
 
 
+<br></br>
+## **1. Lancer Airflow (Python)**
+
+> ## export AIRFLOW_HOME=~/airflow
+
+> ## airflow db init
+
+> ## airflow users create --username admin --firstname alpha --lastname DIALLO --role Admin --email alpha@admin.sn
+
+> ## airflow webserver -p 4040
+
+
+<br></br>
+## **2. Lancer Airflow (Docker)**
+
+> ## docker-compose up airflow-init
+
+> ## docker-compose up -d
+
+#### **NB:** S'assurer que la version de docker-compose soit **1.29.1** ou **+**
